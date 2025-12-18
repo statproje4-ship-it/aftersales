@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin – Sales Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container">
+    <div class="brand">Admin Panel</div>
+    <div class="subtitle">Sales Dashboard</div>
+  </div>
+</header>
+
+<main class="container">
+  <div style="display:flex;justify-content:center;margin-bottom:2em;">
+    <a href="service-dashboard.html" class="primary-btn">After Sales</a>
+  </div>
+  <section class="grid">
+    <div class="card">
+      <h3>Total Orders</h3>
+      <p id="totalOrders" class="kpi">–</p>
+    </div>
+    <div class="card">
+      <h3>Total Revenue</h3>
+      <p id="totalRevenue" class="kpi">–</p>
+    </div>
+
+    <div class="card">
+      <h3>Delivered Orders</h3>
+      <p id="deliveredOrders" class="kpi">–</p>
+    </div>
+
+    <div class="card">
+      <h3>In-Transit Deliveries</h3>
+      <p id="inTransit" class="kpi">–</p>
+    </div>
+  </section>
+  <div style="display: flex; justify-content: center; margin: 2em 0;">
+    <form action="orders.html">
+      <button type="submit" class="primary-btn">View Orders</button>
+    </form>
+  </div>
+<section class="grid">
+  <div class="card">
+    <h3>Order Status Breakdown</h3>
+    <ul id="orderStatusList" class="list"></ul>
+  </div>
+
+  <div class="card">
+    <h3>Payment Methods</h3>
+    <ul id="paymentMethodList" class="list"></ul>
+  </div>
+</section>
+</main>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin – Order Detail</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container">
+    <div class="brand">Admin Panel</div>
+    <div class="subtitle">Order Detail</div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="order-back-btn">
+    <a href="orders.html" class="primary-btn">← Back to Orders</a>
+  </div>
+  <main class="order-detail-main">
+    <section class="card" id="orderInfo"></section>
+    <section class="card">
+    <h3>Order Items</h3>
+    <ul id="itemsList" class="list"></ul>
+  </section>
+
+    <section class="card" id="paymentInfo"></section>
+    <section class="card" id="deliveryInfo"></section>
+  </main>
+</main>
+
+<script src="dashboard.js"></script>
+<script>
+  loadOrderDetail();
+</script>
+
+</body>
+</html>

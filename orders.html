@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin – Orders</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container">
+    <div class="brand">Admin Panel</div>
+    <div class="subtitle">Orders</div>
+  </div>
+</header>
+
+<main class="container">
+  <div style="display:flex;justify-content:center;margin-bottom:2em;">
+    <a href="dashboard.html" class="primary-btn">← Back to Mainpage</a>
+  </div>
+  <section class="card">
+    <h2>Orders</h2>
+    <p class="muted">Sales orders overview (read-only)</p>
+
+    <div class="tablewrap">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Customer</th>
+            <th>Store</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th class="right">Total</th>
+          </tr>
+        </thead>
+        <tbody id="ordersBody"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<script src="dashboard.js"></script>
+<script>
+  loadOrdersTable();
+</script>
+
+</body>
+</html>
